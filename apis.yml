@@ -1,9 +1,31 @@
 aid: atob
 name: AtoB
-description: AtoB is a company surfaced as a portfolio company of bloomberg-beta, general-catalyst and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  AtoB is a fleet payments platform for the trucking and transportation
+  industry, offering fuel cards, spend-management controls, driver payouts,
+  and trip credit to fleets of every size. Its cards work across a nationwide
+  fuel network with truck-stop discounts, granular purchase controls
+  (fuel-only, category/MCC restrictions, per-transaction and daily limits),
+  telematics-aware fraud prevention, and reporting that supports IFTA fuel-tax
+  and expense compliance. AtoB also runs partner programs for factoring
+  companies, freight brokers, and merchants, and exposes a private Partners API
+  used by telematics and fleet-management integrations (for example Fleetio and
+  Oxmaint) to sync cards, drivers, vehicles, and settled fuel transactions.
+  AtoB was surfaced as a portfolio company of Bloomberg Beta and General
+  Catalyst; this profile has been enriched from public web sources.
 url: https://raw.githubusercontent.com/api-evangelist/atob/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/62c496dceca674e60a6d1ecd/672a67e816ac3df1187accde_Favi%20Icon%20Atob%20Webclipp.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -13,9 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Fleet Management
+- Fuel Cards
+- Payments
+- Fintech
+- Trucking
+- Spend Management
+- Commercial Cards
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +52,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/atob-domain-security.yml
 - type: Website
-  url: https://www.atob.co
+  url: https://www.atob.com
+- type: Blog
+  url: https://www.atob.com/blog
+- type: Support
+  url: https://www.atob.com/contact-us
+- type: SignUp
+  url: https://www.atob.com/get-started
+- type: Login
+  url: https://app.atob.com
+- type: TermsOfService
+  url: https://cdn.prod.website-files.com/62c496dceca674e60a6d1ecd/69dd29605b6d1df354f40136_AtoB%20Platform%20Agreement.pdf
+- type: PrivacyPolicy
+  url: https://www.atob.com/privacy-policy
+- type: StatusPage
+  url: https://status.atob.com
+- type: GitHubOrganization
+  url: https://github.com/AtoB-Developers
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

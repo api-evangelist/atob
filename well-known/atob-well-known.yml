@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: probed
+source: live probes of /.well-known/* on the AtoB web host
+host: https://www.atob.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  No /.well-known discovery documents are published on the AtoB web host as of
+  the probe date. AtoB operates a private "Partners API" (surfaced on
+  status.atob.com) but publishes no public developer portal, OpenAPI, or
+  well-known discovery surface. No raw files saved and no WellKnown pointer
+  wired because no document was found (recorded for audit only).
